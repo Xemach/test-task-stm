@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Table Tests</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="search__component">
+        <p class="search__component-text">SEARCH USER</p>
+        <input type="text" id="search" />
+        <button class="search__component-btn" id="clear">CLEAR</button>
+      </div>
+      <h1 class="title">PERSON LIST</h1>
+      <table class="table">
+        <div hidden id="spinner"></div>
+        <thead>
+          <tr>
+            <th>NAME</th>
+            <th>PICTURE</th>
+            <th>LOCATION</th>
+            <th>EMAIL</th>
+            <th>PHONE</th>
+            <th>REGISTER DATE</th>
+          </tr>
+        </thead>
+        <tbody id="root"></tbody>
+        <!-- Сюда добавляю весь редрен из API -->
+      </table>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
