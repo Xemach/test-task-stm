@@ -15,7 +15,7 @@ const getUsers = async () => {
             if (!res.ok) {
                 throw new Error(`Could not fetch ${ url }, ${ res.status }`);
             }
-            return res.json()
+            return res.json();
         }) // преобразуем в json
         .then((users) => {
             spinner.setAttribute("hidden", ""); // как только данные получены, скрываем спиннер
